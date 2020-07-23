@@ -1,6 +1,6 @@
 //faccio apparire il menu con .show
 
-// $('.header-right .fa-bars').click(function(){
+// $('.header-right > a > .fa-bars').click(function(){
 //     $('.hamburger-menu').show('fast');
 // });
 //
@@ -11,7 +11,7 @@
 
 // 2a soluzione
 //aggiungo la classe active ad hamburger-menu con addClass
-$('.header-right .fa-bars').click(function(){
+$('.header-right > a >.fa-bars').click(function(){
     $('.hamburger-menu').addClass('active');
 });
 
@@ -19,3 +19,12 @@ $('.header-right .fa-bars').click(function(){
 $('.close').click(function(){
     $('.hamburger-menu').removeClass('active');
 });
+
+// // 3a soluzione con fadeIn e fadeOut
+// $('.header-right > a > .fa-bars').click(function(){
+//     $('.hamburger-menu').fadeIn(200);
+// });
+//
+// $('.close').click(function(){
+//     $('.hamburger-menu').fadeOut(200);
+// });
